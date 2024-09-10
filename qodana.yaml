@@ -1,0 +1,8 @@
+version: 1.0
+linter: jetbrains/qodana-dotnet:2024.2-eap
+dotnet:
+    solution: ICSharpCode.SharpZipLib.sln
+exclude:
+    - name: UnusedMember.Local
+      paths:
+          - file://$USER_HOME$/.nuget/packages/microsoft.playwright/1.43.0/.playwright/package
